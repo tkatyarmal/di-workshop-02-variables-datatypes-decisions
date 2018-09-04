@@ -1,0 +1,20 @@
+{
+  "name": "di-workshop-02-variables-datatypes-decisions",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaapp/di-workshop-02-variables-datatypes-decisions.git"
+  },
+  "keywords": [],
+  "author": "Alex Dytrych <alex@dytry.ch>",
+  "bugs": {
+    "url": "https://github.com/adaapp/di-workshop-02-variables-datatypes-decisions/issues"
+  },
+  "homepage": "https://github.com/adaapp/di-workshop-02-variables-datatypes-decisions#readme",
+  "devDependencies": {
+    "serve": "^10.0.0"
+  }
+}
