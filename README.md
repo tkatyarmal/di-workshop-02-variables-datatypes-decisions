@@ -8,12 +8,12 @@ Make sure you’ve got the workshop folder open in your editor!
 
 For each of the **bold** questions below:
 
-<p style="text-align: center; font-size: 1.3em;">
-  <span style="display: inline-block; padding: 0 1em">🗣 Discuss</span>
-  <span style="display: inline-block; padding: 0 1em">👩‍💻 Change</span>
-  <span style="display: inline-block; padding: 0 1em">👀 Observe</span>
-  <span style="display: inline-block; padding: 0 1em">🔄 Repeat</span>
-</p>
+<h3 align="center">
+  🗣 Discuss &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  👩‍💻 Change &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  👀 Observe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  🔄 Repeat
+</h3>
 
 1. **🗣 Discuss** the question with your partner
 2. **👩‍💻 Change the code** - what do you expect your changes to do?
