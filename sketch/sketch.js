@@ -1,80 +1,87 @@
 var positionx = 100
 var positiony = 0
 
-var speedx = 10
-var speedy = 10
+var speedx = 5
+var speedy = 5
 
 var name = "Tejas"
 var moving = true
-var hDirection = true
-var vDirection = true
-var len = 400
-var hei = 400
+var xDirection = true
+var yDirection = true
+var canvasLength = 400
+var canvasHeight = 400
 
 var ypaddle = 100
 var paddleHeight = 50
 
 function setup() {
-  createCanvas(len, hei)
-  //frameRate (1000)
+  createCanvas(canvasLength, canvasHeight)
 }
 
 function draw() { //draw function runs 60 times a second
   background(100)
-  
+
   if (moving) {
-    
     //x axis movement
-    if (positionx == 0){
-      hDirection = true
+    if (positionx == 0) {
+      xDirection = true
     }
-    if (positionx == len) {
-      hDirection = false
+    if (positionx == canvasLength) {
+      xDirection = false
     }
 
-    if(hDirection)  {
+    if (xDirection) {
       positionx = positionx + speedx
     }
-    else { 
+    else {
       positionx = positionx - speedx
     }
 
     //y axis movement
-    if (positiony == 0){
-      vDirection = true
+    if (positiony == 0) {
+      yDirection = true
     }
-    if (positiony == hei) {
-      vDirection = false
+    if (positiony == canvasHeight) {
+      yDirection = false
     }
 
-    if(vDirection)  {
+    if (yDirection) {
       positiony = positiony + speedy
     }
-    else { 
+    else {
       positiony = positiony - speedy
     }
 
   }
 
   ellipse(positionx, positiony, 10, 10)
-  rect(385,ypaddle,10,paddleHeight)
+  rect(350, ypaddle, 10, paddleHeight)
 
-
-
-
+  //paddle movement controls
   if (keyIsPressed) {
-    if (key == 'w' && ypaddle>0) {
-      ypaddle = ypaddle - 10
+    if (key == 'w' && ypaddle > 0) {
+      ypaddle = ypaddle - 5
     }
-    if (key == 's' && ypaddle<hei-paddleHeight) {
-      ypaddle = ypaddle + 10
+    if (key == 's' && ypaddle < canvasHeight - paddleHeight) {
+      ypaddle = ypaddle + 5
     }
   }
 
- // text('My name is ' + name, 10, 30)
- // console.log('The position is ' + position)
+  if (positionx == 350 && ypaddle < positiony && positiony < (ypaddle + 50)) {
+    xDirection = false
+  }
 
- // console.log("value of moving is " + moving)
+
+
+
+
+
+
+
+  // text('My name is ' + name, 10, 30)
+  // console.log('The position is ' + position)
+
+  // console.log("value of moving is " + moving)
 
 
 }
